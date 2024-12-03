@@ -1,13 +1,10 @@
+version: 0.1
+
 phases:
-  install:
-    runtime-versions:
-      java: corretto11
+  build:
     commands:
-      - echo "Installing dependencies (if any)"
-  pre_build:
-    commands:
-      - echo "Cleaning and verifying the project"
-      - mvn clean verify -DskipTests
+      - echo Build completed on `date`
+      - mvn package
 
 artifacts:
   files:
