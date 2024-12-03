@@ -15,7 +15,7 @@ phases:
       - echo Creating zip file of build artifacts...
       - zip -r /tmp/build-artifacts.zip target/*
       - echo Uploading build artifacts to S3...
-      - aws s3 cp /tmp/build-artifacts.zip s3://aws-codedeploy-sample-tomcat-2/ --region us-east-1
+      - aws s3 cp /tmp/build-artifacts.zip s3://aws-codedeploy-sample-tomcat/ --region us-east-1
 
 artifacts:
   files:
